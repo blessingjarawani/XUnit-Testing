@@ -12,7 +12,8 @@ namespace BLL
 
             if (fileName.Length < 10)
             {
-                throw new FileNotFoundException();
+                // throw new FileNotFoundException();
+                throw new ArgumentException("the file Name is too Short", "file");
             }
             return "The file was correctly loaded";
         }
